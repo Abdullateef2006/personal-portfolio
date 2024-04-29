@@ -8,10 +8,13 @@
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="shortcut icon" href="C:\Users\Joseph Tolani\My Personal Portfolio\tdc.png" type="image/x-icon"> -->
+    <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
 </head>
 
 <body>
@@ -28,11 +31,15 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="#home">home</a></li>
+                
+                <li ><a href="#home" >home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#education">education</a></li>
                 <!-- <li><a href="#portfolio">portfolio</a></li> -->
                 <li><a href="#contact">contact</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><input type="checkbox" class="l" onclick="Tap()"></li>
+
             </ul>
         </nav>
 
@@ -49,7 +56,7 @@
         <h3>HI THERE !</h3>
         <h1>I'M <span>Ojugbele Abdullateef</span></h1>
         <p>
-            I am a Fullstack Developer with knowledge of both backend and frontend
+            I am a <span id="word"></span> <span id="cursor">|</span>
         </p>
         <a href="#about"><button class="btn">About me <i class="fas fa-user"></i></button></a>
 
@@ -67,7 +74,7 @@
 
             <div class="info">
                 <h3> <span> Name : </span>Ojugbele Abdullateef </h3>
-                <h3> <span> Age : </span> 16 </h3>
+                <!-- <h3> <span> Age : </span> 16 </h3> -->
                 <h3> <span> Qualification : </span> Undergraduate </h3>
                 <h3> <span> Post : </span> Fullstack Developer </h3>
                 <h3> <span> Language Understood : </span> English, Arabic and Yoruba </h3>
@@ -77,23 +84,13 @@
             <div class="counter">
 
                 <div class="box">
-                    <span>1+</span>
+                    <span>2+</span>
                     <h3>years of experience</h3>
                 </div>
 
                 <div class="box">
-                    <span>100+</span>
+                    <h3>over</h3><span id="count">1</span>
                     <h3>Project Completed</h3>
-                </div>
-
-                <div class="box">
-                    <span>200+</span>
-                    <h3>happy clients</h3>
-                </div>
-
-                <div class="box">
-                    <span>5+</span>
-                    <h3>awards won</h3>
                 </div>
 
             </div>
@@ -138,8 +135,8 @@
             <div class="box">
                 <i class="fas fa-graduation-cap"></i>
                 <span>2022</span>
-                <h3>Front End Development and Graphic Design</h3>
-                <p>Started learning Frontend Development and Graphic Design 2022-2023. </p>
+                <h3>Fullstack Development and Graphic Design</h3>
+                <p>Started learning Frontend Fullstack and Graphic Design 2022-2023. </p>
             </div>
 
         </div>
@@ -157,27 +154,22 @@
         <div class="box-container">
 
             <div class="box">
-                <img src="C:\Users\Joseph Tolani\My Personal Portfolio\think.JPG" alt="">
+                <h3 id="project"></h3>
             </div>
 
             <div class="box">
-                <img src="C:\Users\Joseph Tolani\My Personal Portfolio\lasu.jpg" alt="">
             </div>
 
             <div class="box">
-                <img src="C:\Users\Joseph Tolani\My Personal Portfolio\best.jpg" alt="">
             </div>
 
             <div class="box">
-                <img src="C:\Users\Joseph Tolani\My Personal Portfolio\tdc.png" alt="">
             </div>
 
             <div class="box">
-                <img src="C:\Users\Joseph Tolani\My Personal Portfolio\pelumi.jpg" alt="">
             </div>
 
             <div class="box">
-                <img src="C:\Users\Joseph Tolani\My Personal Portfolio\mr.jpg" alt="">
             </div>
 
         </div>
@@ -200,16 +192,33 @@
 
                 <div class="info">
                     <h3> <i class="fas fa-envelope"></i><a
-                            href="ojugbelelateef2006@gmail.com">ojugbelelateef2006@gmail.com</a </h3>
-                        <h3> <i class="fas fa-phone"></i> +234-808-975-4705 </h3>
-                        <h3> <i class="fas fa-phone"></i> +234-810-520-5052 </h3>
-                        <h3> <i class="fas fa-map-marker-alt"></i> Lagos, Nigeria </h3>
-                        <!-- <a href="wa.me/+2349078193814">
-                <img src="C:\Users\Joseph Tolani\Downloads\whatsapp.png" alt="" class="img">
-            </a> -->
+                            href="mailto:abdullateefCoding@gmail.com/" >abdullateefCoding@gmail.com</a>
+                    </h3>
+                    <h3> <i class="fas fa-phone"></i><a
+                        href="tel:+2348089754705">+234-808-975-4705</a>
+                    </h3>
+                    <h3> <i class="fas fa-phone"></i><a
+                        href="tel:+2348105205052">+234-810-520-5052</a>
+                    </h3>
+                    <h3> <i class="fas fa-phone"></i><a
+                        href="sms:+2348089754705?body=Hi there" >Sms us</a>
+                    </h3>
+                    <!-- <h3> <i class="fas fa-phone"></i> +234-808-975-4705 </h3> -->
+                    <!-- <h3> <i class="fas fa-phone"></i> +234-810-520-5052 </h3> -->
+                    <h3> <i class="fas fa-map-marker-alt"></i> Lagos, Nigeria </h3>
+                    <h3 > <i class="fa-brands fa-github"></i><a href="https://github.com/Abdullateef2006/" > Github
+                            Account</a>
+                    </h3>
+                    <h3 > <i class="fa-brands fa-whatsapp"></i><a href="https://wa.link/6tu8io" > whatsApp Me
+                        </a>
+                </h3>
+
+
+         
                 </div>
 
             </div>
+            
 
             <form action="">
 
@@ -226,13 +235,85 @@
 
     </section>
 
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h1 class="heading">My <span>skills</span> </h1>
+            <div class="skills-content">
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>django</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line django"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>flask</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line flask"></div>
+                    </div>     <div class="bars">
+                        <div class="info">
+                            <span>fast api</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line fast_api"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>React js</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line react"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>c/c++</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line c"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- contact section ends -->
 
 
     <!-- scroll top button  -->
 
     <a href="#home" class="top">
-        <img src="" alt="">
+        <i class="fa-solid fa-arrow-up"></i>
     </a>
 
 
@@ -251,6 +332,27 @@
 
     <!-- jquery cdn link  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        atOptions = {
+            'key' : '0f0c785d5ed8e5dadf7a19dbaae185e1',
+            'format' : 'iframe',
+            'height' : 300,
+            'width' : 700,
+            'params' : {}
+        };
+        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/0f0c785d5ed8e5dadf7a19dbaae185e1/invoke.js"></scr' + 'ipt>');
+    </script>
+    <script type="text/javascript">
+        atOptions = {
+            'key' : '2201394d3e2d99e6ea605c2d97e5eabe',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 600,
+            'params' : {}
+        };
+        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2201394d3e2d99e6ea605c2d97e5eabe/invoke.js"></scr' + 'ipt>');
+    </script>
+    <script type='text/javascript' src='//pl19742173.highrevenuegate.com/11/d1/47/11d147c0c1fb50b7d8038e6c790ca6b6.js'></script>
 
     <!-- custom js file link  -->
     <script src="script.js"></script>
