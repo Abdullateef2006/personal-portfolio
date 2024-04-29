@@ -2,26 +2,68 @@
 
 :root{
     --yellow:#f9ca24;
+    --anotherBlack: #222;
+    --lLightBlack:#333;
+    --lightBlack:#1a1a1a;
+    --black:#111;
+    --white:#f9f9f9;
+    --lightgrey:lightgrey;
+}
+
+.darkIcon {
+    --black:var(--white);
+    --white:var(--black);
+    --lightBlack:#B0E0E6;
+    --lLightBlack:#E0FFFF;
+    --yellow:#1E90FF;
+    --anotherBlack:#76ABDF;
 }
 
 html {
     scroll-behavior: smooth;
 }
+/* Animation start */
+
+#cursor {
+    animation: blink 0.7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+  /* Animation end */
 
 *{
     font-family: 'Nunito', sans-serif;
-    margin:0; padding:0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none; border:none;
+    outline: none;
+    border:none;
     text-transform: capitalize;
     transition: all .2s linear;
 }
 
 *::selection{
     background:var(--yellow);
-    color:#333;
+    color:var(--lLightBlack);
 }
+
+/* .btnTop {
+    background-color: var(--yellow);
+    border-radius: 30px;
+    border: 0;
+    width: 120px;
+    height: 40px;
+} */
 
 html{
     font-size: 62.5%;
@@ -33,7 +75,7 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background:#222;
+    background: var(--anotherBlack);
 }
 
 html::-webkit-scrollbar-thumb{
@@ -41,7 +83,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#111;
+    background:var(--black);
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -51,10 +93,18 @@ section{
     padding:1rem;
 }
 
+a {
+    color: var(--white);
+}
+/* 
+hr {
+    background-color: var(--white);
+} */
+
 .btn{
     padding:.7rem 3rem;
-    background:#333;
-    color:#fff;
+    background:var(--lLightBlack);
+    color:var(--white);
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -76,7 +126,7 @@ section{
     font-size: 4rem;
     padding:1rem;
     border-bottom: .1rem solid #fff4;
-    color:#fff;
+    color:var(--white);
 }
 
 .heading span{
@@ -85,17 +135,18 @@ section{
 
 header{
     position: fixed;
-    top:0; left:0;
+    top:0;
+    left:0;
     z-index: 1000;
     height:100%;
     width:35rem;
-    background:#1a1a1a;
+    background:var(--lightBlack);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     text-align: center;
-}
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
 
 header .user img{
     height:17rem;
@@ -108,12 +159,12 @@ header .user img{
 
 header .user .name{
     font-size: 3.5rem;
-    color:#fff;
+    color:var(--white);
 }
 
 header .user .post{
     font-size: 2rem;
-    color:#eee;
+    color:var(--white);
 }
 
 header .navbar{
@@ -130,8 +181,8 @@ header .navbar ul li a{
     display: block;
     padding:1rem;
     margin:1.5rem 0;
-    background:#333;
-    color:#fff;
+    background:var(--lLightBlack);
+    color:var(--white);
     font-size: 2rem;
     border-radius: 5rem;
 }
@@ -143,8 +194,8 @@ header .navbar ul li a:hover{
 #menu{
     position: fixed;
     top:2rem; right:2rem;
-    background:#333;
-    color:#fff;
+    background:var(--lLightBlack);
+    color:var(--white);
     cursor: pointer;
     font-size: 2.5rem;
     padding:1rem 1.5rem;
@@ -161,12 +212,12 @@ header .navbar ul li a:hover{
 
 .home h3{
     font-size: 2.5rem;
-    color:#fff;
+    color:var(--white);
 }
 
 .home h1{
     font-size:5rem;
-    color:#fff;
+    color:var(--white);
 }
 
 .home h1 span{
@@ -175,7 +226,7 @@ header .navbar ul li a:hover{
 
 .home p{
     font-size:2rem;
-    color:#eee;
+    color:var(--white);
     padding: 1rem 0;
 }
 
@@ -201,7 +252,7 @@ header .navbar ul li a:hover{
 }
 
 .about .row .info h3 span{
-    color:#eee;
+    color:var(--white);
     padding:0 .5rem;
 }
 
@@ -214,7 +265,7 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box{
     width:20rem;
-    background:#222;
+    background:var(--lightBlack);
     text-align: center;
     padding: 2rem;
     margin:2rem;
@@ -227,7 +278,7 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box h3{
     font-size: 2rem;
-    color:#fff;
+    color:var(--white);
 }
 
 .education .box-container{
@@ -243,27 +294,27 @@ header .navbar ul li a:hover{
     width:27rem;
     margin:4rem 1rem;
     padding-left: 4rem;
-    border-left: .2rem solid #fff;
+    border-left: .2rem solid var(--white);
     position: relative;
 }
 
 .education .box-container .box span{
     font-size: 1.3rem;
-    background:#222;
-    color:#fff;
+    background:var(--anotherBlack);
+    color:var(--white);
     border-radius: 5rem;
     padding:.5rem 2.5rem;
 }
 
 .education .box-container .box h3{
     font-size: 2rem;
-    color:#fff;
+    color:var(--white);
     padding-top: 1.5rem;
 }
 
 .education .box-container .box p{
     font-size: 1.4rem;
-    color:#eee;
+    color:var(--white);
     padding: 1rem 0;
 }
 
@@ -276,7 +327,7 @@ header .navbar ul li a:hover{
     line-height: 5rem;
     text-align: center;
     font-size: 2rem;
-    color:#fff;
+    color:var(--white);
     background:var(--yellow);
 }
 
@@ -330,8 +381,8 @@ header .navbar ul li a:hover{
 .contact .row form .box{
     padding:1.5rem;
     margin:1rem 0;
-    background:#3333;
-    color:#fff;
+    background:var(--lLightBlack);
+    color:var(--white);
     text-transform: none;
     font-size: 1.7rem;
     width:100%;
@@ -348,7 +399,7 @@ header .navbar ul li a:hover{
 
 .contact .row .content .title{
     text-transform: uppercase;
-    color:#fff;
+    color:var(--white);
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -357,7 +408,7 @@ header .navbar ul li a:hover{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color:#eee;
+    color:var(--white);
     padding:1rem 0;
     font-weight: normal;
 }
@@ -369,16 +420,212 @@ header .navbar ul li a:hover{
 
 .top{
     position: fixed;
-    bottom:7.5rem; right: 2rem;
+    bottom:7.5rem;
+    right: 2rem;
     z-index: 100;
-    display: none;
+    background-color: var(--yellow);
+    border: 0;
+    /* width: 30px;
+    height: 30px;
+    padding: 10px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 12px;
+    border-radius: 50%; 
+    font-size: large;
+    /* display: none; */
+    color: var(--white);
 }
 
+/* Skill */
 
+/* .skills .title::after{
+    content: "what i know";
+} */
+.skills .skills-content .column{
+    width: calc(90% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--yellow);
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: var(--yellow);
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: var(--lightgrey);
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--yellow);
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .js::before{
+    width: 60%;
+}
+.skills-content .right .python::before{
+    width: 70%;
+}
+.skills-content .right .django::before{
+    width: 80%;
+}
 
+.skills-content .right .react::before{
+    width: 70%;
+}
 
+.skills-content .right .flask::before{
+    width: 60%;
+}.skills-content .right .fast_api::before{
+    width: 60%;
+}
 
+.skills-content .right .c::before{
+    width: 60%;
+}
+span {
+    color: var(--white);
+}
 
+.skills-content {
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 80px;
+    padding-bottom: 1px;
+
+}
+/* 
+
+.skills-content.right {
+  padding-bottom: 30px;
+} */
+
+/* 
+.skills {
+    padding-bottom: 30px;
+} */
+
+/* Toggle button */
+
+#project {
+    color: white;
+}
+
+.l {
+    display: block;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+  }
+  
+  .l {
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 0.75em;
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.3) inset;
+    color: #fdea7b;
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+    padding: 0.15em;
+    width: 3em;
+    height: 1.5em;
+    transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .l:before, .l:after {
+    content: "";
+    display: block;
+  }
+  
+  .l:before {
+    background-color: #d7d7d7;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    z-index: 1;
+  }
+  
+  .l:after {
+    background: linear-gradient(transparent 50%, rgba(0,0,0,0.15) 0) 0 50% / 50% 100%,
+          repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
+          radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+    background-repeat: no-repeat;
+    border: 0.25em solid transparent;
+    border-left: 0.4em solid #d8d8d8;
+    border-right: 0 solid transparent;
+    transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    transform: translateX(-22.5%);
+    transform-origin: 25% 50%;
+    width: 1.2em;
+    height: 1em;
+    box-sizing: border-box;
+  }
+  /* Checked */
+  .l:checked {
+    background-color: rgba(0,0,0,0.45);
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
+  }
+  
+  .l:checked:before {
+    background-color: currentColor;
+    transform: translateX(125%)
+  }
+  
+  .l:checked:after {
+    border-left-color: currentColor;
+    transform: translateX(-2.5%) rotateY(180deg);
+  }
+  /* Other States */
+  .l:focus {
+      /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+    outline: 0;
+  }
 
 
 
