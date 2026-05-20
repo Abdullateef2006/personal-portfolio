@@ -5,12 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ojugbele Abdullateef — Fullstack Developer</title>
+    <meta name="description" content="Ojugbele Abdullateef — Professional Fullstack Developer based in Lagos, Nigeria. Specializing in high-performance web applications, frontend design, and scalable backend services." />
+    <meta name="keywords" content="Ojugbele Abdullateef, Fullstack Developer, Web Developer, React, Django, Node.js, Portfolio, Lagos, Nigeria" />
+    <meta name="author" content="Ojugbele Abdullateef" />
+    <meta name="robots" content="index, follow" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'" />
 
     <style>
         /* ─── THEME TOKENS ─── */
@@ -22,8 +27,8 @@
             --border: #222;
             --borderL: #2e2e2e;
             --fg: #f0f0f0;
-            --fg2: #999;
-            --fg3: #444;
+            --fg2: #cccccc; /* Increased from #999 for contrast (WCAG AA compliant) */
+            --fg3: #8a8a8a; /* Increased from #444 for contrast (WCAG AA compliant) */
             --accent: #f0f0f0;
             --tag-bg: #1e1e1e;
             --shadow: rgba(0, 0, 0, .6);
@@ -39,8 +44,8 @@
             --border: #ddd;
             --borderL: #ccc;
             --fg: #111;
-            --fg2: #555;
-            --fg3: #aaa;
+            --fg2: #333333; /* Darkened from #555 for contrast */
+            --fg3: #6b6b6b; /* Darkened from #aaa for contrast (WCAG AA compliant) */
             --accent: #111;
             --tag-bg: #eee;
             --shadow: rgba(0, 0, 0, .12);
@@ -2512,7 +2517,7 @@
         <div class="sec-label" data-num="04" data-en="Live" data-ar="مباشر">Live</div>
         <h2 class="sec-title reveal" data-en="Live in<br>Production" data-ar="يعمل<br>الآن">Live in<br>Production</h2>
         <div class="live-grid reveal">
-            <a href="https://buildtrackerapp.com" target="_blank" class="live-card">
+            <a href="https://buildtrackerapp.com" target="_blank" rel="noopener noreferrer" class="live-card">
                 <div class="live-top">
                     <div class="live-dot"></div><i class="fas fa-arrow-right live-arrow"></i>
                 </div>
@@ -2521,7 +2526,7 @@
                 <p class="live-desc" data-en="Construction & project management platform."
                     data-ar="منصة إدارة مشاريع البناء.">Construction &amp; project management platform.</p>
             </a>
-            <a href="https://skprojects.tech/" target="_blank" class="live-card">
+            <a href="https://skprojects.tech/" target="_blank" rel="noopener noreferrer" class="live-card">
                 <div class="live-top">
                     <div class="live-dot"></div><i class="fas fa-arrow-right live-arrow"></i>
                 </div>
@@ -2531,7 +2536,7 @@
                     data-ar="وكالة تطوير متكاملة ومنصة حلول رقمية حديثة.">Fullstack development agency &amp; modern
                     digital solutions platform.</p>
             </a>
-            <a href="https://orr.solutions" target="_blank" class="live-card">
+            <a href="https://orr.solutions" target="_blank" rel="noopener noreferrer" class="live-card">
                 <div class="live-top">
                     <div class="live-dot"></div><i class="fas fa-arrow-right live-arrow"></i>
                 </div>
@@ -2540,7 +2545,7 @@
                 <p class="live-desc" data-en="Professional business solutions for real clients."
                     data-ar="حلول أعمال احترافية لعملاء حقيقيين.">Professional business solutions for real clients.</p>
             </a>
-            <a href="https://www.scaleforgelabs.com/" target="_blank" class="live-card">
+            <a href="https://www.scaleforgelabs.com/" target="_blank" rel="noopener noreferrer" class="live-card">
                 <div class="live-top">
                     <div class="live-dot"></div><i class="fas fa-arrow-right live-arrow"></i>
                 </div>
@@ -2711,29 +2716,30 @@
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/Abdullateef2006/" target="_blank" class="soc-link"><i
+                    <a href="https://github.com/Abdullateef2006/" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="GitHub Profile"><i
                             class="fab fa-github"></i></a>
-                    <a href="https://wa.link/6tu8io" target="_blank" class="soc-link"><i
+                    <a href="https://wa.link/6tu8io" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="WhatsApp Me"><i
                             class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:abdullateefCoding@gmail.com" class="soc-link"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:abdullateefCoding@gmail.com" class="soc-link" aria-label="Send Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
             <div class="reveal">
-                <div class="form-group"><label class="form-label" data-en="Your Name" data-ar="اسمك">Your
-                        Name</label><input type="text" class="form-input" data-en-placeholder="John Doe"
-                        data-ar-placeholder="محمد أحمد" placeholder="John Doe" /></div>
-                <div class="form-group"><label class="form-label" data-en="Email Address"
-                        data-ar="البريد الإلكتروني">Email Address</label><input type="email" class="form-input"
-                        data-en-placeholder="john@example.com" data-ar-placeholder="example@gmail.com"
-                        placeholder="john@example.com" /></div>
-                <div class="form-group"><label class="form-label" data-en="Subject"
-                        data-ar="الموضوع">Subject</label><input type="text" class="form-input"
-                        data-en-placeholder="Project Inquiry" data-ar-placeholder="استفسار عن مشروع"
-                        placeholder="Project Inquiry" /></div>
-                <div class="form-group"><label class="form-label" data-en="Message"
-                        data-ar="الرسالة">Message</label><textarea class="form-ta"
-                        data-en-placeholder="Tell me about your project..." data-ar-placeholder="أخبرني عن مشروعك..."
-                        placeholder="Tell me about your project..."></textarea></div>
+                <div class="form-group">
+                    <label for="form-name" class="form-label" data-en="Your Name" data-ar="اسمك">Your Name</label>
+                    <input id="form-name" type="text" class="form-input" data-en-placeholder="John Doe" data-ar-placeholder="محمد أحمد" placeholder="John Doe" />
+                </div>
+                <div class="form-group">
+                    <label for="form-email" class="form-label" data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+                    <input id="form-email" type="email" class="form-input" data-en-placeholder="john@example.com" data-ar-placeholder="example@gmail.com" placeholder="john@example.com" />
+                </div>
+                <div class="form-group">
+                    <label for="form-subject" class="form-label" data-en="Subject" data-ar="الموضوع">Subject</label>
+                    <input id="form-subject" type="text" class="form-input" data-en-placeholder="Project Inquiry" data-ar-placeholder="استفسار عن مشروع" placeholder="Project Inquiry" />
+                </div>
+                <div class="form-group">
+                    <label for="form-message" class="form-label" data-en="Message" data-ar="الرسالة">Message</label>
+                    <textarea id="form-message" class="form-ta" data-en-placeholder="Tell me about your project..." data-ar-placeholder="أخبرني عن مشروعك..." placeholder="Tell me about your project..."></textarea>
+                </div>
                 <button class="btn btn-fill form-submit" onclick="sendForm(this)"><i class="fas fa-paper-plane"></i>
                     <span data-en="Send Message" data-ar="إرسال الرسالة">Send Message</span></button>
             </div>
